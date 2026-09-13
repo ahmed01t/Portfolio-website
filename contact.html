@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Tanveer | Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Ahmed<span>.</span></h2>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        </nav>
+    </header>
+
+    <section class="page-section">
+        <p class="small-text">GET IN TOUCH</p>
+        <h1>Contact Me</h1>
+
+        <div class="two-column">
+
+            <div class="box">
+                <h2>Contact Information</h2>
+                <p><strong>Email:</strong> ahmed@example.com</p>
+                <p><strong>Phone:</strong> +92 300 0000000</p>
+                <p><strong>Location:</strong> Pakistan</p>
+            </div>
+
+            <form class="contact-form" onsubmit="sendMessage(event)">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" rows="6" placeholder="Your Message" required></textarea>
+                <button class="btn" type="submit">Send Message</button>
+            </form>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Ahmed Tanveer. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

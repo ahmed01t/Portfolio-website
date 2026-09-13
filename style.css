@@ -57,6 +57,16 @@ body {
     cursor: pointer;
 }
 
+.theme-btn {
+    border: none;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+
 /* Home */
 .hero {
     min-height: 75vh;
@@ -272,3 +282,23 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #111827;
+    color: #f9fafb;
+}
+
+body.dark-mode .navbar,
+body.dark-mode .project-card,
+body.dark-mode .box,
+body.dark-mode .profile-card,
+body.dark-mode .skill-card {
+    background-color: #1f2937;
+    color: #f9fafb;
+}
+
+body.dark-mode .nav-links a {
+    color: #f9fafb;
+}
+
